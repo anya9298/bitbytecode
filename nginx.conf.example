@@ -1,0 +1,32 @@
+# Пример конфигурации Nginx для BitByteCode Landing
+# Скопируйте этот файл в /etc/nginx/sites-available/bitbytecode
+# и создайте симлинк: sudo ln -s /etc/nginx/sites-available/bitbytecode /etc/nginx/sites-enabled/
+
+server {
+    listen 80;
+    server_name bitbytecode.local;  # Замените на ваш домен
+    
+    # Путь к директории с файлами лендинга
+    root /var/www/bitbytecode;
+    index index.html;
+
+    # Логирование
+    access_log /var/log/nginx/bitbytecode_access.log;
+    error_log /var/log/nginx/bitbytecode_error.log;
+
+    # Основная локация
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    # Кэширование статических файлов
+    location ~* \.(css|js|jpg|jpeg|png|gif|ico|svg)$ {
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+    }
+
+    # Безопасность заголовков
+    add_header X-Frame-Options "SAMEORIGIN" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header X-XSS-Protection "1; mode=block" always;
+}

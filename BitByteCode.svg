@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 148.06px;
+        letter-spacing: .06em;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+        font-family: ChakraPetch-Bold, 'Chakra Petch';
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-size: 119.78px;
+        letter-spacing: .06em;
+      }
+
+      .cls-3 {
+        fill: #4bab5a;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        fill: #4e4ed4;
+      }
+
+      .cls-5 {
+        fill: #8787ff;
+      }
+
+      .cls-6 {
+        fill: #ace8b2;
+      }
+
+      .cls-7 {
+        fill: #d9d9d9;
+      }
+
+      .cls-8 {
+        fill: #bdbdf2;
+      }
+
+      .cls-9 {
+        fill: #b3b3ff;
+      }
+
+      .cls-10 {
+        fill: #8ddb99;
+      }
+
+      .cls-11 {
+        fill: #ff5e5e;
+      }
+
+      .cls-12 {
+        fill: #ff8585;
+      }
+
+      .cls-13 {
+        fill: #64c473;
+      }
+
+      .cls-14 {
+        fill: #ffbfbf;
+      }
+    </style>
+  </defs>
+  <rect class="cls-12" x="322.55" y="132.62" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
+  <rect class="cls-14" x="503.12" y="132.62" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
+  <rect class="cls-7" x="683.7" y="132.62" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
+  <rect class="cls-3" x="141.97" y="374.19" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
+  <rect class="cls-13" x="322.55" y="374.19" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
+  <rect class="cls-10" x="503.12" y="374.19" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
+  <rect class="cls-6" x="683.7" y="374.19" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
+  <rect class="cls-4" x="141.97" y="615.75" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
+  <rect class="cls-5" x="322.55" y="615.75" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
+  <rect class="cls-9" x="503.12" y="615.75" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
+  <rect class="cls-8" x="683.7" y="615.75" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
+  <rect class="cls-11" x="141.97" y="132.62" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
+  <text class="cls-1" transform="translate(182.44 302.63)"><tspan x="0" y="0">B</tspan></text>
+  <text class="cls-2" transform="translate(399.51 291.29)"><tspan x="0" y="0">I</tspan></text>
+  <text class="cls-2" transform="translate(561.31 291.29)"><tspan x="0" y="0">T</tspan></text>
+  <text class="cls-1" transform="translate(182.44 543.1)"><tspan x="0" y="0">B</tspan></text>
+  <text class="cls-2" transform="translate(378.07 531.77)"><tspan x="0" y="0">Y</tspan></text>
+  <text class="cls-2" transform="translate(561.31 531.77)"><tspan x="0" y="0">T</tspan></text>
+  <text class="cls-2" transform="translate(737.9 534.43)"><tspan x="0" y="0">E</tspan></text>
+  <text class="cls-1" transform="translate(182.44 783.58)"><tspan x="0" y="0">C</tspan></text>
+  <text class="cls-2" transform="translate(374.11 772.24)"><tspan x="0" y="0">O</tspan></text>
+  <text class="cls-2" transform="translate(555.08 772.24)"><tspan x="0" y="0">D</tspan></text>
+  <text class="cls-2" transform="translate(737.9 772.24)"><tspan x="0" y="0">E</tspan></text>
+</svg>
