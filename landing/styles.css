@@ -694,8 +694,10 @@ body {
 }
 
 .team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 32px;
     margin-bottom: 48px;
 }
@@ -712,6 +714,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    width: 250px;
 }
 
 .team-member:hover {
