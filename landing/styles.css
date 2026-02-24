@@ -128,7 +128,7 @@ body {
     right: 0;
     bottom: 0;
     background: radial-gradient(circle at 30% 50%, rgba(135, 135, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 70% 50%, rgba(141, 219, 153, 0.1) 0%, transparent 50%);
+        radial-gradient(circle at 70% 50%, rgba(141, 219, 153, 0.1) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -140,7 +140,7 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: 
+    background:
         radial-gradient(circle at 20% 30%, rgba(135, 135, 255, 0.3) 0%, transparent 25%),
         radial-gradient(circle at 80% 70%, rgba(141, 219, 153, 0.3) 0%, transparent 25%),
         radial-gradient(circle at 50% 50%, rgba(179, 179, 255, 0.2) 0%, transparent 30%);
@@ -151,24 +151,32 @@ body {
 }
 
 @keyframes flickerBackground {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 0.7;
     }
+
     50% {
         opacity: 1;
     }
 }
 
 @keyframes moveLights {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate(0, 0) rotate(0deg);
     }
+
     25% {
         transform: translate(10%, -10%) rotate(5deg);
     }
+
     50% {
         transform: translate(-10%, 10%) rotate(-5deg);
     }
+
     75% {
         transform: translate(5%, -5%) rotate(3deg);
     }
@@ -204,6 +212,7 @@ body {
         transform: translateY(0);
         opacity: 1;
     }
+
     100% {
         transform: translateY(100vh);
         opacity: 0;
@@ -250,51 +259,67 @@ body {
 }
 
 @keyframes floatLight1 {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate(0, 0);
     }
+
     33% {
         transform: translate(30px, -40px);
     }
+
     66% {
         transform: translate(-20px, 30px);
     }
 }
 
 @keyframes floatLight2 {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate(0, 0);
     }
+
     33% {
         transform: translate(-40px, 30px);
     }
+
     66% {
         transform: translate(30px, -30px);
     }
 }
 
 @keyframes floatLight3 {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate(-50%, -50%) scale(1);
     }
+
     50% {
         transform: translate(-50%, -50%) scale(1.2);
     }
 }
 
 @keyframes flicker1 {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 0.6;
         filter: blur(60px) brightness(1);
     }
+
     25% {
         opacity: 0.8;
         filter: blur(60px) brightness(1.2);
     }
+
     50% {
         opacity: 0.4;
         filter: blur(60px) brightness(0.8);
     }
+
     75% {
         opacity: 0.7;
         filter: blur(60px) brightness(1.1);
@@ -302,18 +327,23 @@ body {
 }
 
 @keyframes flicker2 {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 0.5;
         filter: blur(60px) brightness(1);
     }
+
     30% {
         opacity: 0.7;
         filter: blur(60px) brightness(1.3);
     }
+
     60% {
         opacity: 0.3;
         filter: blur(60px) brightness(0.7);
     }
+
     90% {
         opacity: 0.6;
         filter: blur(60px) brightness(1.1);
@@ -321,22 +351,28 @@ body {
 }
 
 @keyframes flicker3 {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 0.4;
         filter: blur(60px) brightness(1);
     }
+
     20% {
         opacity: 0.6;
         filter: blur(60px) brightness(1.4);
     }
+
     40% {
         opacity: 0.2;
         filter: blur(60px) brightness(0.6);
     }
+
     60% {
         opacity: 0.5;
         filter: blur(60px) brightness(1.2);
     }
+
     80% {
         opacity: 0.3;
         filter: blur(60px) brightness(0.9);
@@ -409,9 +445,11 @@ body {
         opacity: 0;
         transform: scale(0.8) translateY(-20px);
     }
+
     60% {
         transform: scale(1.05) translateY(0);
     }
+
     100% {
         opacity: 1;
         transform: scale(1) translateY(0);
@@ -478,12 +516,19 @@ body {
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: translateY(0);
     }
+
     40% {
         transform: translateY(-10px);
     }
+
     60% {
         transform: translateY(-5px);
     }
@@ -570,6 +615,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     padding: 20px;
     background: #1e293b;
     border-radius: 12px;
@@ -586,6 +632,7 @@ body {
 .tech-icon {
     font-size: 32px;
     margin-bottom: 8px;
+
 }
 
 .tech-name {
@@ -596,7 +643,7 @@ body {
 }
 
 .main-language {
-    background: linear-gradient(135deg, rgba(135, 135, 255, 0.2) 0%, rgba(141, 219, 153, 0.2) 100%);
+    background: linear-gradient(135deg, rgba(167, 167, 255, 0.2) 0%, rgba(141, 219, 153, 0.2) 100%);
     border-radius: 16px;
     padding: 32px;
     text-align: center;
@@ -608,7 +655,6 @@ body {
 .main-language h3 {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 24px;
 }
 
 .main-language-content {
@@ -619,8 +665,8 @@ body {
 }
 
 .main-language-icon {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     object-fit: contain;
     display: block;
     flex-shrink: 0;
@@ -662,6 +708,10 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
     border: 1px solid rgba(135, 135, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .team-member:hover {
@@ -671,10 +721,11 @@ body {
 }
 
 .member-photo {
-    width: 128px;
-    height: 128px;
-    background: linear-gradient(135deg, #8787ff 0%, #8ddb99 100%);
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -846,18 +897,37 @@ body {
 }
 
 .gamification-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .gamification-item {
     text-align: center;
+
+    background: #94a3b83b;
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(135, 135, 255, 0.1);
+
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .gamification-icon {
     font-size: 64px;
     margin-bottom: 16px;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
 }
 
 .gamification-item h4 {
@@ -886,6 +956,7 @@ body {
     font-weight: bold;
     margin-bottom: 24px;
     color: #8787ff;
+    text-align: center;
 }
 
 .benefits-grid {
@@ -954,6 +1025,9 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(135, 135, 255, 0.1);
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-card:hover {
@@ -964,21 +1038,13 @@ body {
 .contact-icon {
     width: 80px;
     height: 80px;
-    background: rgba(135, 135, 255, 0.2);
-    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 40px;
     margin: 0 auto 24px;
-}
-
-.contact-icon.location {
-    background: rgba(135, 135, 255, 0.2);
-}
-
-.contact-icon.about {
-    background: rgba(141, 219, 153, 0.2);
 }
 
 .contact-card h3 {
@@ -1078,15 +1144,15 @@ body {
         display: flex;
     }
 
-                .nav-link {
-                    width: 100%;
-                    padding: 12px;
-                }
-                
-                .nav-link:hover,
-                .nav-link.active {
-                    background-color: rgba(135, 135, 255, 0.15);
-                }
+    .nav-link {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        background-color: rgba(135, 135, 255, 0.15);
+    }
 
     .hero-title {
         font-size: 36px;
@@ -1105,12 +1171,12 @@ body {
         gap: 30px;
         text-align: center;
     }
-    
+
     .hero-logo-img {
         max-width: 220px;
         margin: 0 auto;
     }
-    
+
     .hero-tech-text {
         font-size: 36px;
         text-align: center;
@@ -1168,7 +1234,7 @@ body {
     .hero-logo-img {
         max-width: 180px;
     }
-    
+
     .hero-tech-text {
         font-size: 28px;
         text-align: center;
