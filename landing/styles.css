@@ -1007,6 +1007,11 @@ body {
     color: #64748b;
 }
 
+.prototypes-placeholder a {
+    color: #b4becb;
+    font-weight: 700;
+}
+
 /* Contacts Section */
 .contacts {
     padding: 80px 0;
