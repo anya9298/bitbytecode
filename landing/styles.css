@@ -1124,6 +1124,10 @@ body {
     color: #64748b;
 }
 
+footer p {
+    text-align: center;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .mobile-menu-toggle {
