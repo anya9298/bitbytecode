@@ -8,4 +8,8 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] })
   ],
+  server: {
+    host: 'local.bitbytecode.ru',
+    port: 5173,
+},
 })

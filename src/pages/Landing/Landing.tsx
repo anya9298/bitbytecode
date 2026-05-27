@@ -21,28 +21,29 @@ const Landing = () => {
     useEffect(() => {
         if (document.getElementById('rocket-chat-script')) return;
     
-        const loadChat = () => {
-            const script = document.createElement('script');
-    
-            script.id = 'rocket-chat-script';
-    
-            script.src =
-                'https://chat.bitbytecode.ru/livechat/rocketchat-livechat.min.js?_=201903270000';
-    
-            script.async = true;
-    
-            document.body.appendChild(script);
+        (window as any).RocketChat = function (c: any) {
+            (window as any).RocketChat._.push(c);
         };
     
-        if (document.readyState === 'complete') {
-            loadChat();
-        } else {
-            window.addEventListener('load', loadChat);
+        (window as any).RocketChat._ = [];
     
-            return () => {
-                window.removeEventListener('load', loadChat);
-            };
-        }
+        (window as any).RocketChat.url =
+            'https://chat.bitbytecode.ru/livechat';
+    
+        const script = document.createElement('script');
+    
+        script.id = 'rocket-chat-script';
+    
+        script.async = true;
+    
+        script.src =
+            'https://chat.bitbytecode.ru/livechat/rocketchat-livechat.min.js?_=201903270000';
+    
+        document.body.appendChild(script);
+    
+        return () => {
+            script.remove();
+        };
     }, []);
 
     useEffect(() => {
@@ -140,7 +141,7 @@ const Landing = () => {
             <p>&copy; 2025-2026 "BitByteCode". Все права защищены.</p>
         </footer>
 
-        
+
     </div>)
 }
 
