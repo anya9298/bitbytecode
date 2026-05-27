@@ -1,0 +1,21 @@
+[
+  { "from": "html", "to": "react" },
+  { "from": "react", "to": "java" },
+  { "from": "javafx", "to": "java" },
+  { "from": "wpf", "to": "csharp" },
+  { "from": "android", "to": "java" },
+  { "from": "java", "to": "spring" },
+  { "from": "java", "to": "sse" },
+  { "from": "java", "to": "ws" },
+  { "from": "spring", "to": "postgresql" },
+  { "from": "spring", "to": "mongodb" },
+  { "from": "spring", "to": "redis" },
+  { "from": "spring", "to": "kafka" },
+  { "from": "spring", "to": "rabbitmq" },
+  { "from": "spring", "to": "auth", "dashed": true },
+  { "from": "spring", "to": "docker", "dashed": true },
+  { "from": "docker", "to": "compose", "dashed": true },
+  { "from": "postgresql", "to": "compose", "dashed": true },
+  { "from": "docker", "to": "linux", "dashed": false },
+  { "from": "docker", "to": "actions", "dashed": true }
+]

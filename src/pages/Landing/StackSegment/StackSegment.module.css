@@ -1,0 +1,219 @@
+/* ── корень ──────────────────────────────────────────────────────────────── */
+
+.root {
+    min-height: calc(100vh - 60px);
+    scroll-margin-top: 60px;
+    background: linear-gradient(180deg, #020617 0%, #0a0a1a 100%);
+    color: #e2e8f0;
+    padding: 20px;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+/* ── заголовок ───────────────────────────────────────────────────────────── */
+
+.heading { text-align: center; }
+
+.title {
+    font-size: clamp(26px, 4vw, 40px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #f1f5f9;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: #475569;
+}
+
+/* ── легенда ─────────────────────────────────────────────────────────────── */
+
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    justify-content: center;
+}
+
+.legendItem {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.legendDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.legendText {
+    font-size: 12px;
+    color: #475569;
+    font-weight: 500;
+}
+
+/* ── основная компоновка: схема + панель ────────────────────────────────── */
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 20px;
+    align-items: start;
+}
+
+@media (max-width: 860px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── обёртка SVG ─────────────────────────────────────────────────────────── */
+
+.diagramWrap {
+    background: rgba(255, 255, 255, 0.02);
+    border: 0.5px solid rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    padding: 12px;
+    overflow: hidden;
+}
+
+/* ── сама SVG ────────────────────────────────────────────────────────────── */
+
+.svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ── кликабельный узел SVG ───────────────────────────────────────────────── */
+
+.svgNode {
+    cursor: pointer;
+    transition: opacity 0.1s;
+}
+
+.svgNode:hover rect {
+    filter: brightness(1.25);
+}
+
+.svgNode:focus-visible rect {
+    outline: none;
+    stroke: #8787ff !important;
+    stroke-width: 2px !important;
+}
+
+/* ── правая панель ───────────────────────────────────────────────────────── */
+
+.infoPanel {
+    border: 0.5px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 20px;
+    min-height: 200px;
+    position: sticky;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.infoPanelFilled {
+    border-color: rgba(135, 135, 255, 0.22);
+    background: rgba(135, 135, 255, 0.04);
+}
+
+/* пустое состояние */
+.infoEmpty {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.infoEmptyIcon {
+    font-size: 28px;
+    opacity: 0.18;
+}
+
+.infoEmpty p {
+    font-size: 13px;
+    color: #334155;
+    line-height: 1.5;
+}
+
+/* заполненное состояние */
+.infoTop {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.infoIcon {
+    font-size: 28px;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.infoName {
+    font-size: 15px;
+    font-weight: 600;
+    color: #f1f5f9;
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+.infoTag {
+    font-size: 11px;
+    color: #475569;
+    font-weight: 500;
+}
+
+.infoDesc {
+    font-size: 13px;
+    color: #94a3b8;
+    line-height: 1.7;
+}
+
+.infoRoles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.rolePill {
+    font-size: 11px;
+    padding: 3px 9px;
+    border-radius: 99px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #64748b;
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    font-weight: 500;
+}
+
+.infoLink {
+    display: inline-block;
+    margin-top: auto;
+    font-size: 12px;
+    color: #8787ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.15s;
+}
+
+.infoLink:hover {
+    color: #a5b4fc;
+    text-decoration: underline;
+}

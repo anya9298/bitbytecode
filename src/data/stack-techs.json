@@ -1,0 +1,200 @@
+[
+  {
+    "id": "html",
+    "icon": "🌐",
+    "name": "HTML / CSS / JS",
+    "tag": "основа веба",
+    "desc": "Фундамент любого веб-приложения. HTML задаёт структуру, CSS — оформление, JavaScript — поведение на клиенте.",
+    "url": "https://developer.mozilla.org/ru/",
+    "roles": ["Вёрстка", "Анимации", "Логика на клиенте"]
+  },
+  {
+    "id": "react",
+    "icon": "⚛️",
+    "name": "React",
+    "tag": "SPA-фреймворк",
+    "desc": "Библиотека для построения UI на основе компонентов. Виртуальный DOM, хуки, состояние — стандарт для SPA.",
+    "url": "https://react.dev",
+    "roles": ["Компонентный UI", "State-управление", "SPA"]
+  },
+  {
+    "id": "javafx",
+    "icon": "🖥️",
+    "name": "JavaFX",
+    "tag": "desktop, Java",
+    "desc": "Платформа для десктопных GUI-приложений на Java. Сцены, FXML-разметка, CSS-стилизация.",
+    "url": "https://openjfx.io",
+    "roles": ["Desktop-приложения", "Java GUI"]
+  },
+  {
+    "id": "wpf",
+    "icon": "🪟",
+    "name": "WPF",
+    "tag": "desktop, C#",
+    "desc": "Windows Presentation Foundation. XAML-разметка, привязка данных, богатые элементы управления на C#.",
+    "url": "https://learn.microsoft.com/ru-ru/dotnet/desktop/wpf/",
+    "roles": ["Desktop-приложения", "C# GUI", "Data binding"]
+  },
+  {
+    "id": "android",
+    "icon": "🤖",
+    "name": "Android",
+    "tag": "мобильная разработка",
+    "desc": "Разработка нативных мобильных приложений. Java/Kotlin, Activity/Fragment, RecyclerView, работа с сетью.",
+    "url": "https://developer.android.com",
+    "roles": ["Мобильные приложения", "Java на устройстве"]
+  },
+  {
+    "id": "java",
+    "icon": "☕",
+    "name": "Java",
+    "tag": "основной язык",
+    "desc": "Основной язык курса. Строгая типизация, ООП, огромная экосистема. Применяется в backend, Android и desktop.",
+    "url": "https://www.java.com",
+    "roles": ["Backend", "Android", "Desktop"]
+  },
+  {
+    "id": "csharp",
+    "icon": "💜",
+    "name": "C#",
+    "tag": ".NET-экосистема",
+    "desc": "Язык от Microsoft с богатой стандартной библиотекой. Desktop-приложения на WPF и серверный код на .NET.",
+    "url": "https://learn.microsoft.com/ru-ru/dotnet/csharp/",
+    "roles": ["Desktop (WPF)", "Backend (.NET)"]
+  },
+  {
+    "id": "spring",
+    "icon": "🌱",
+    "name": "Spring",
+    "tag": "Java backend",
+    "desc": "Главный фреймворк Java-экосистемы. Spring Boot, MVC, Data, Security — закрывает большинство backend-задач.",
+    "url": "https://spring.io",
+    "roles": ["REST API", "Dependency injection", "ORM", "Security"]
+  },
+  {
+    "id": "postgresql",
+    "icon": "🐘",
+    "name": "PostgreSQL",
+    "tag": "реляционная БД",
+    "desc": "Мощная open-source СУБД. SQL, транзакции, индексы, JSON-поддержка. Стандарт для production-приложений.",
+    "url": "https://www.postgresql.org",
+    "roles": ["Хранение данных", "SQL", "Транзакции"]
+  },
+  {
+    "id": "mongodb",
+    "icon": "🍃",
+    "name": "MongoDB",
+    "tag": "документная БД",
+    "desc": "NoSQL база данных, хранит документы в формате BSON. Гибкая схема, горизонтальное масштабирование.",
+    "url": "https://www.mongodb.com",
+    "roles": ["NoSQL", "Гибкая схема", "Документы"]
+  },
+  {
+    "id": "kafka",
+    "icon": "📨",
+    "name": "Kafka",
+    "tag": "стриминг событий",
+    "desc": "Распределённый брокер сообщений. Паттерн pub/sub, хранение событий, высокая пропускная способность.",
+    "url": "https://kafka.apache.org",
+    "roles": ["Event streaming", "Pub/Sub", "Микросервисы"]
+  },
+  {
+    "id": "redis",
+    "icon": "🔴",
+    "name": "Redis",
+    "tag": "кэш / хранилище",
+    "desc": "In-memory хранилище данных. Кэширование, сессии, pub/sub, очереди задач. На порядки быстрее обычной БД.",
+    "url": "https://redis.io",
+    "roles": ["Кэширование", "Сессии", "Очереди"]
+  },
+  {
+    "id": "rabbitmq",
+    "icon": "🐰",
+    "name": "RabbitMQ",
+    "tag": "брокер сообщений",
+    "desc": "AMQP-брокер для асинхронной передачи сообщений между сервисами. Обменники, очереди, маршрутизация.",
+    "url": "https://www.rabbitmq.com",
+    "roles": ["Async messaging", "Микросервисы", "Task queues"]
+  },
+  {
+    "id": "sse",
+    "icon": "📡",
+    "name": "SSE",
+    "tag": "серверные события",
+    "desc": "Server-Sent Events — односторонний стриминг от сервера к клиенту по HTTP. Проще WebSocket, отлично для уведомлений.",
+    "url": "https://developer.mozilla.org/ru/docs/Web/API/Server-sent_events",
+    "roles": ["Реал-тайм события", "Уведомления"]
+  },
+  {
+    "id": "ws",
+    "icon": "🔌",
+    "name": "WebSockets",
+    "tag": "двусторонний канал",
+    "desc": "Полнодуплексный протокол поверх TCP. Сервер и клиент обмениваются сообщениями в реальном времени — чаты, игры.",
+    "url": "https://developer.mozilla.org/ru/docs/Web/API/WebSockets_API",
+    "roles": ["Реал-тайм", "Чаты", "Двусторонний стриминг"]
+  },
+  {
+    "id": "docker",
+    "icon": "🐳",
+    "name": "Docker",
+    "tag": "контейнеризация",
+    "desc": "Платформа для упаковки приложения и зависимостей в изолированный контейнер. «Работает у меня» больше не оправдание.",
+    "url": "https://www.docker.com",
+    "roles": ["Контейнеризация", "Воспроизводимость", "Изоляция"]
+  },
+  {
+    "id": "compose",
+    "icon": "🐙",
+    "name": "Docker Compose",
+    "tag": "локальная оркестрация",
+    "desc": "Запуск многоконтейнерных приложений одной командой. Вся инфраструктура описана в docker-compose.yml.",
+    "url": "https://docs.docker.com/compose/",
+    "roles": ["Локальная инфра", "Multi-container", "Dev окружение"]
+  },
+  {
+    "id": "linux",
+    "icon": "🐧",
+    "name": "Linux-серверы",
+    "tag": "production-хостинг",
+    "desc": "Управление Linux-серверами: systemd, nginx, файловая система, права доступа, логи. Основа production-деплоя.",
+    "url": "https://www.linux.org",
+    "roles": ["Деплой", "Администрирование", "nginx"]
+  },
+  {
+    "id": "auth",
+    "icon": "🔐",
+    "name": "Auth & AuthZ",
+    "tag": "безопасность",
+    "desc": "Аутентификация (кто ты?) и авторизация (что можешь?). JWT, OAuth2, Spring Security, сессии, роли и права.",
+    "url": "https://oauth.net/2/",
+    "roles": ["JWT", "OAuth2", "RBAC", "Spring Security"]
+  },
+  {
+    "id": "git",
+    "icon": "🗂️",
+    "name": "Git / GitHub",
+    "tag": "контроль версий",
+    "desc": "Git — система контроля версий. GitHub — платформа для хранения репозиториев, code review и совместной работы.",
+    "url": "https://github.com",
+    "roles": ["Версионирование", "Code review", "Совместная работа"]
+  },
+  {
+    "id": "actions",
+    "icon": "⚙️",
+    "name": "GitHub Actions",
+    "tag": "CI/CD",
+    "desc": "Автоматизация: тесты при каждом push, деплой при merge в main. Workflow описывается в YAML прямо в репозитории.",
+    "url": "https://docs.github.com/ru/actions",
+    "roles": ["CI", "CD", "Автоматизация тестов"]
+  },
+  {
+    "id": "ai",
+    "icon": "✨",
+    "name": "AI-интеграции",
+    "tag": "LLM / API",
+    "desc": "Подключение языковых моделей через API. OpenAI, Anthropic Claude, векторные поиски — добавляют интеллект в приложение.",
+    "url": "https://platform.openai.com/docs",
+    "roles": ["LLM API", "Векторный поиск", "Чат-боты"]
+  }
+]

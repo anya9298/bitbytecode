@@ -1,0 +1,12 @@
+[
+  { "href": "#main", "label": "Главная" },
+  { "href": "#stack", "label": "Стек разработки" },
+  { "href": "#courses", "label": "Треки курсов" },
+  { "href": "#projects", "label": "Реестр проектов" },
+  { "href": "#eduprocess", "label": "Про учебный процесс" },
+  { "href": "#techs", "label": "Тех. оснащение" },
+  { "href": "#samsung", "label": "Школа Samsung" },
+  { "href": "#itcube", "label": "IT-Cube" },
+  { "href": "#news", "label": "Новости" },
+  { "href": "#contacts", "label": "О преподавателе и контакты" }
+]
