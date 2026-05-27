@@ -19,6 +19,33 @@ const Landing = () => {
     const navItems = navItemsData as NavItemData[];
 
     useEffect(() => {
+        if (document.getElementById('rocket-chat-script')) return;
+    
+        const loadChat = () => {
+            const script = document.createElement('script');
+    
+            script.id = 'rocket-chat-script';
+    
+            script.src =
+                'https://chat.bitbytecode.ru/livechat/rocketchat-livechat.min.js?_=201903270000';
+    
+            script.async = true;
+    
+            document.body.appendChild(script);
+        };
+    
+        if (document.readyState === 'complete') {
+            loadChat();
+        } else {
+            window.addEventListener('load', loadChat);
+    
+            return () => {
+                window.removeEventListener('load', loadChat);
+            };
+        }
+    }, []);
+
+    useEffect(() => {
         const onKeyDown = (e: KeyboardEvent) => {
             if (e.key === 'Escape') setIsMenuOpen(false);
         };
@@ -109,27 +136,11 @@ const Landing = () => {
 
         <ContactsSegment />
 
-        <iframe
-            id="rocketchat-iframe"
-            src="https://chat.bitbytecode.ru/livechat"
-            style={{
-                position: 'fixed',
-                bottom: '20px',
-                right: '20px',
-
-                border: 'none',
-                backgroundColor: 'transparent',
-
-                zIndex: 1000,
-                overflow: 'hidden',
-            }}
-        />
-
         <footer>
             <p>&copy; 2025-2026 "BitByteCode". Все права защищены.</p>
         </footer>
 
-
+        
     </div>)
 }
 
