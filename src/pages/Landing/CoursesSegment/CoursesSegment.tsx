@@ -59,6 +59,8 @@ function CourseCard({ course }: { course: CourseData }) {
         </div>
       </div>
 
+      <div style={{flexGrow: 1}}></div>
+
       <footer className={styles.cardFooter}>
         <a className={styles.cta} href="#itcube">
           Как поступить
@@ -75,6 +77,7 @@ export const CoursesSegment = () => {
         <header className={styles.heading}>
           <h2 className={styles.title}>Треки курсов</h2>
           <p className={styles.subtitle}>
+            На базе IT-Cube.Рязань.
             {AGE_RANGE_TEXT} Формат большинства треков — 2 занятия в неделю.
           </p>
         </header>
