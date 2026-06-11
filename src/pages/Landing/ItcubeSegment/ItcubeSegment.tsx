@@ -23,7 +23,7 @@ export const ItcubeSegment = () => {
     <section id="itcube" className={styles.root}>
       <div className={styles.inner}>
         <header className={styles.heading}>
-          <div className={styles.photoWrap}>
+          <div>
             <img
               className={styles.photo}
               src={data.photoUrl}

@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import styles from './MainSegment.module.css';
 
-const TECH_SYMBOLS = ['{','}','[',']','(',')',  '<','>','/','\\','|','&','%','#','@','!','?','*','+','-','=','~','`','^','0','1'];
+const TECH_SYMBOLS = ['{', '}', '[', ']', '(', ')', '<', '>', '/', '\\', '|', '&', '%', '#', '@', '!', '?', '*', '+', '-', '=', '~', '`', '^', '0', '1'];
 const MATRIX_CHARS = '01{}[]()<>/\\|&%#@!?*+-=~`^0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 
 export const MainSegment = () => {
@@ -102,8 +102,11 @@ export const MainSegment = () => {
             <div className={styles.animatedLight1} />
             <div className={styles.animatedLight2} />
             <div className={styles.animatedLight3} />
-
+                <div className={`${styles.banner}`}>
+                    <p>Уже скоро запустится новостной портал! Вы сможете узнавать актуальную информацию о событиях программы обучения Java!</p>
+                </div>
             <div className={styles.container}>
+
                 <div className={styles.heroContent}>
 
                     {/* Top: logo + tagline */}
@@ -134,18 +137,18 @@ export const MainSegment = () => {
                                     .logo-text { transition: opacity 0.1s ease; }
                                 `}</style>
                             </defs>
-                            <rect className="logo-cls-12" x="322.55" y="132.62" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
-                            <rect className="logo-cls-14" x="503.12" y="132.62" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
-                            <rect className="logo-cls-7"  x="683.70" y="132.62" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
-                            <rect className="logo-cls-3"  x="141.97" y="374.19" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
-                            <rect className="logo-cls-13" x="322.55" y="374.19" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
-                            <rect className="logo-cls-10" x="503.12" y="374.19" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
-                            <rect className="logo-cls-6"  x="683.70" y="374.19" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
-                            <rect className="logo-cls-4"  x="141.97" y="615.75" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
-                            <rect className="logo-cls-5"  x="322.55" y="615.75" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
-                            <rect className="logo-cls-9"  x="503.12" y="615.75" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
-                            <rect className="logo-cls-8"  x="683.70" y="615.75" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
-                            <rect className="logo-cls-11" x="141.97" y="132.62" width="174.33" height="233.21" rx="5.67" ry="5.67"/>
+                            <rect className="logo-cls-12" x="322.55" y="132.62" width="174.33" height="233.21" rx="5.67" ry="5.67" />
+                            <rect className="logo-cls-14" x="503.12" y="132.62" width="174.33" height="233.21" rx="5.67" ry="5.67" />
+                            <rect className="logo-cls-7" x="683.70" y="132.62" width="174.33" height="233.21" rx="5.67" ry="5.67" />
+                            <rect className="logo-cls-3" x="141.97" y="374.19" width="174.33" height="233.21" rx="5.67" ry="5.67" />
+                            <rect className="logo-cls-13" x="322.55" y="374.19" width="174.33" height="233.21" rx="5.67" ry="5.67" />
+                            <rect className="logo-cls-10" x="503.12" y="374.19" width="174.33" height="233.21" rx="5.67" ry="5.67" />
+                            <rect className="logo-cls-6" x="683.70" y="374.19" width="174.33" height="233.21" rx="5.67" ry="5.67" />
+                            <rect className="logo-cls-4" x="141.97" y="615.75" width="174.33" height="233.21" rx="5.67" ry="5.67" />
+                            <rect className="logo-cls-5" x="322.55" y="615.75" width="174.33" height="233.21" rx="5.67" ry="5.67" />
+                            <rect className="logo-cls-9" x="503.12" y="615.75" width="174.33" height="233.21" rx="5.67" ry="5.67" />
+                            <rect className="logo-cls-8" x="683.70" y="615.75" width="174.33" height="233.21" rx="5.67" ry="5.67" />
+                            <rect className="logo-cls-11" x="141.97" y="132.62" width="174.33" height="233.21" rx="5.67" ry="5.67" />
                             <text className="logo-cls-1 logo-text" data-final="B" transform="translate(182.44 302.63)"><tspan x="0" y="0">B</tspan></text>
                             <text className="logo-cls-2 logo-text" data-final="I" transform="translate(399.51 291.29)"><tspan x="0" y="0">I</tspan></text>
                             <text className="logo-cls-2 logo-text" data-final="T" transform="translate(561.31 291.29)"><tspan x="0" y="0">T</tspan></text>
@@ -177,7 +180,7 @@ export const MainSegment = () => {
                     <button className={styles.scrollDown} onClick={scrollToStack}>
                         <span>Узнать больше</span>
                         <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                         </svg>
                     </button>
 
