@@ -1,5 +1,5 @@
 # Команда BitByteCode ([bitbytecode.ru](https://bitbytecode.ru))
-<img src="./landing/BitByteCode_Logo.png" width=300>
+<img src="./src/assets/BitByteCode_Logo.png" width=300>
 
 Это команда учеников, объединённых целью создания современных и удобных приложений.
 Наше название отзывает к исторической последовательности пути, который привёл нас к сегодняшним возможностям:
